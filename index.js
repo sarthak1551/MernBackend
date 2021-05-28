@@ -28,8 +28,5 @@ mongoose.connect(
     console.log("MongoDB connection established");
   }
 );
-app.get("/", async (req, res) => {
-  res.send("Hello ! World");
-});
 
 app.use("/users", require("./routes/userRouter"));
